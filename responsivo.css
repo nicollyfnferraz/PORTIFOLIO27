@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte global */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffe9f1;
+    color: #333;
+}
+
+/* Cabeçalho */
+.topo {
+    background-color: #b2677f;
+    padding: 1rem;
+    text-align: center;
+}
+
+.topo h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Galeria principal */
+.galeria {
+    padding: 2rem;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Imagem e legenda */
+.imagem {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.imagem:hover {
+    transform: scale(1.03);
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagem p {
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    background-color: #b2677f;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .topo h1 {
+        font-size: 1.5rem;
+    }
+
+    .imagem p {
+        font-size: 0.8rem;
+    }
+}

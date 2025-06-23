@@ -1,0 +1,115 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffe9f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Topo / Cabeçalho */
+.topo {
+    background-color: #b2677f;
+    padding: 1rem;
+    text-align: center;
+}
+
+.topo h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #b2677f;
+}
+
+/* Galeria com vídeo */
+.galeria {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.video-container p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+    padding: 0 1rem;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    background-color: #f8c5da;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .topo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .topo h1 {
+        font-size: 1.3rem;
+    }
+
+    .video-container p {
+        font-size: 0.85rem;
+    }
+
+    nav ul li a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
